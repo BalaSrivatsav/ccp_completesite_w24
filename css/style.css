@@ -78,7 +78,24 @@ nav a:hover {
     color: #136e96;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
+  .hidden-mobile {
+    position: absolute;
+    left: -1000px;
+    height: 25px;
+    background-color: white;
+    opacity: 0;
+  }
+
+  .hidden-mobile:focus {
+      left: 1%;
+      opacity: 1;
+      position: fixed;
+      top: 10px;
+  }
+}    
+
+@media only screen and (max-width: 768px) {
 
     body,main {
         padding: 15px;
@@ -101,6 +118,45 @@ nav a:hover {
     a[href="#main"] {
         display: none;
     }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hidden-mobile {
+    position: absolute;
+    left: -1000px;
+    height: 25px;
+    background-color: white;
+    opacity: 0;
+  }
+
+  .hidden-mobile:focus {
+      left: 1%;
+      opacity: 1;
+      position: fixed;
+      top: 10px;
+  }
+
+  body,main {
+      padding: 15px;
+  }
+
+  main>div {
+      padding: 15px;
+      margin: 15px 0;
+  }
+
+  h1,h2,h3,p {
+      font-size: smaller;
+  }
+
+  .bacon-photos,.chako-photos,.lulu-photos,.pluto-photos,.sprout-photos {
+      grid-template-columns: 1fr;
+      gap: 15px;
+  }
+
+  a[href="#main"] {
+      display: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
