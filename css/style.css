@@ -209,7 +209,8 @@ image {
 
   div.photos {
     display: grid;
-    grid-template-columns: 45% 45%;
+/*     grid-template-columns: 45% 45%; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
   }
 
   p {
