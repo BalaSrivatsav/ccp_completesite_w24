@@ -7,6 +7,12 @@
     grid-template-columns: 1fr 1fr 1fr; 
 } */
 
+@charset "UTF-8";
+
+:root {
+    --border-radius: 8px;
+}
+
 *,
 *::before,
 *::after {
