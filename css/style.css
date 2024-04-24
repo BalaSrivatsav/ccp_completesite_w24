@@ -7,9 +7,15 @@
     grid-template-columns: 1fr 1fr 1fr; 
 } */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 img {
-    width: 100%;
-    height:auto
+    display: block;
+    max-width: 100%;
 }
 
 body {
@@ -93,6 +99,17 @@ nav a:hover {
       position: fixed;
       top: 10px;
   }
+  .link-allstyles {
+      margin-left: 6rem;
+  }
+}
+
+.link-github svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25em;
+  fill: currentColor;
+}
 
 div {
   margin: 20px;
