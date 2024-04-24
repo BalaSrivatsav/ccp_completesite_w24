@@ -210,7 +210,9 @@ image {
   div.photos {
     display: grid;
 /*     grid-template-columns: 45% 45%; */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+/*     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));   */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 8px; 
   }
 
   p {
@@ -311,9 +313,12 @@ image {
   }
 
   div.photos {
-    display: grid;
+/*     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 24px;
   }
 
   img,video {
