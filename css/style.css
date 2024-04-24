@@ -1,11 +1,11 @@
-.grid-container {
+/* .grid-container {
     display: grid;
 }
 
 .bacon-photos, .chako-photos, .lulu-photos, .pluto-photos, .sprout-photos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-}
+} */
 
 img {
     width: 100%;
